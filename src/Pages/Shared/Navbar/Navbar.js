@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from "../../../Assets/Easy Cart.png";
+import logo from "../../../Assets/Easy_Cart-removebg-preview.png";
 import "./Navbar.css";
 const Navbar = () => {
     const menuItems =
@@ -12,7 +12,7 @@ const Navbar = () => {
 
     </React.Fragment>
     return (
-        <div className="navbar bg-orange-500">
+        <div className="navbar  bg-orange-500 flex justify-between">
         <div className="navbar-start">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -24,8 +24,8 @@ const Navbar = () => {
           </div>
           <Link to="/" className="btn btn-ghost normal-case text-xl"><img className='logo' src={logo} alt="" srcset="" /></Link>
         </div>
-        <div className="navbar-end text-xl hidden lg:flex">
-          <ul className="menu menu-horizontal px-5">
+        <div className="navbar-center text-lg text-white hidden lg:flex">
+          <ul className="menu menu-horizontal px-2">
           {menuItems}
           </ul>
         </div>
