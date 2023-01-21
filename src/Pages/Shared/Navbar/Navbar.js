@@ -1,3 +1,5 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCartShopping} from '@fortawesome/free-solid-svg-icons'
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from "../../../Assets/Easy_Cart-removebg-preview.png";
@@ -7,7 +9,7 @@ const Navbar = () => {
     <React.Fragment>
               <li><Link to="/">Home</Link></li>
               <li><Link to="/">Product </Link></li>
-              <li><Link to="/">Cart</Link></li>
+              <li><Link to="/"> <FontAwesomeIcon className=''icon={faCartShopping}></FontAwesomeIcon></Link></li>
               <li><Link to="/">Login</Link></li>
 
     </React.Fragment>

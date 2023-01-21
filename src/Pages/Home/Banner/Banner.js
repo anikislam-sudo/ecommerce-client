@@ -2,7 +2,7 @@ import React from 'react';
 import banner from "../../../Assets/banner-removebg-preview.png";
 const Banner = () => {
     return (
-        <div className="hero my-3 bg-yellow-200">
+        <div className="hero rounded-lg my-3 bg-yellow-200">
         <div className="hero-content my-6 flex-col lg:flex-row-reverse">
           <img src={banner} alt='' className=" w-100% " />
           <div>

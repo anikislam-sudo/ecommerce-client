@@ -8,8 +8,8 @@ module.exports = {
       {
         carttheme:{
           primary: '#FF6600',
-          secondary: '#19D3AE',
-          accent: "#3A4256",
+          secondary: '#FEF08A',
+          accent: "#E5E7EB",
           neutral: "#3D4451",
           "base-100": "#FFFFFF",
         }
