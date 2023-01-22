@@ -2,10 +2,11 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
+import { useCart } from 'react-use-cart';
 
 const Product = ({product}) => {
     const {img,name,price}=product;
-    
+    const{addItem} = useCart();
     return (
         <div className="card card-compact  mt-3 w-96  bg-base-100 shadow-xl">
 <PhotoProvider>
@@ -25,7 +26,7 @@ const Product = ({product}) => {
         <FontAwesomeIcon className='text-warning'icon={faStar}></FontAwesomeIcon>
         </p>    
     <div className="card-actions justify-center">
-      <button className="btn btn-primary w-full">Add to Cart</button>
+      <button onClick={()=>addItem(product)} className="btn btn-primary w-full">Add to Cart</button>
     </div>
   </div>
 </div>

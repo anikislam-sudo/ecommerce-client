@@ -9,7 +9,7 @@ const Navbar = () => {
     <React.Fragment>
               <li><Link to="/">Home</Link></li>
               <li><Link to="/product">Product </Link></li>
-              <li><Link to="/"> <FontAwesomeIcon className=''icon={faCartShopping}></FontAwesomeIcon></Link></li>
+              <li><Link to="/cart"> <FontAwesomeIcon className=''icon={faCartShopping}></FontAwesomeIcon></Link></li>
               <li><Link to="/">Login</Link></li>
 
     </React.Fragment>
