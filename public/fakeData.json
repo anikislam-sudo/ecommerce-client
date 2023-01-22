@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "img": "https://i.ibb.co/6wb3dLr/jacket.webp",
+      "name": "Adidas Black Bomber Jacket",
+      "price": 100
+    },
+    {
+      "id": 2,
+      "img": "https://i.ibb.co/DYwdPDm/white-sneakers.webp",
+      "name": "Adidas White Sneakers",
+      "price": 60
+    },
+    {
+      "id": 3,
+      "img": "https://i.ibb.co/Th5pHNL/nike-shoes.jpg",
+      "name": "Nike Ultra Running Boost",
+      "price": 60
+    },
+    {
+      "id": 4,
+      "img": "https://i.ibb.co/zbyPpt2/puma-tees.webp",
+      "name": "Puma 700 T-shirt",
+      "price": 32
+    },
+    {
+      "id": 5,
+      "img": "https://i.ibb.co/pK1Zjn6/iphone-14.jpg",
+      "name": "IPhone 14 pro",
+      "price": 800
+    },
+    {
+      "id": 6,
+      "img": "https://i.ibb.co/GcgpmdY/samsung-75-inche-UHD.jpg",
+      "name": "samsung 75 inches UHD",
+      "price": 700
+    }
+  ]

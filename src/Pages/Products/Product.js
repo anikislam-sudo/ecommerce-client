@@ -1,10 +1,11 @@
+import { faStar } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
-import 'react-photo-view/dist/react-photo-view.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
-const Featured = ({service}) => {
-    const {img,name,price}=service;
+
+const Product = ({product}) => {
+    const {img,name,price}=product;
+    
     return (
         <div className="card card-compact  mt-3 w-96  bg-base-100 shadow-xl">
 <PhotoProvider>
@@ -31,4 +32,4 @@ const Featured = ({service}) => {
     );
 };
 
-export default Featured;
+export default Product;

@@ -8,7 +8,7 @@ const Navbar = () => {
     const menuItems =
     <React.Fragment>
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/">Product </Link></li>
+              <li><Link to="/product">Product </Link></li>
               <li><Link to="/"> <FontAwesomeIcon className=''icon={faCartShopping}></FontAwesomeIcon></Link></li>
               <li><Link to="/">Login</Link></li>
 

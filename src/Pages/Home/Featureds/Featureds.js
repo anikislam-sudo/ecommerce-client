@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
  import cap from "../../../Assets/featured/adidas black cap.webp" ;
  import watch  from "../../../Assets/featured/fossil watch.jfif" ;
  import headphone from "../../../Assets/featured/one plus headphone.jpg" ;
@@ -6,30 +7,13 @@ import React from 'react';
 import Featured from './Featured';
 import "./Featureds.css";
 const Featureds = () => {
-  const  services=[
-    {
-        id:1,
-        img:cap,
-        description:"Adidas Black Cap",
-        price:23
-        
-      },
-    {
-        id:2,
-        img: watch,
-        description:"Fossil Brown Watch",
-        price:70
-        
-      },
-   
-    {
-        id:4,
-        img:tshirt,
-        description:"Puma Green Tshirt",
-        price:10
-        
-      },
-  ]
+  const [services,setServices] = useState([]);
+  useEffect(()=>{
+    fetch("fakeData.json")
+    .then(res=>res.json())
+    .then(data=>setServices(data))
+ }
+    ,[])
     return (
         <div className='mt-16 '>
             <div className='text-center'>
@@ -38,7 +22,7 @@ const Featureds = () => {
         </div>
         <div className= "  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
             {
-               services.map(service =>
+               services.slice(0,3).map(service =>
                  <Featured
                   key={service.id}
                   service={service}
@@ -47,7 +31,7 @@ const Featureds = () => {
             }
         </div>
         <div className='mt-6 button'>
-            <button className='btn btn-primary '>See more</button>
+           <Link to ="/product"> <button className='btn btn-primary '>See more</button></Link>
         </div>
         </div>
     );

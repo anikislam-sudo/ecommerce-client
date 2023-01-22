@@ -20,7 +20,7 @@ const Footer = () => {
           <Link to="/" className="link link-hover font-bold">About us</Link>
           <Link to="/" className="link link-hover font-bold">Contact</Link>
           <Link to="/" className="link link-hover font-bold">Jobs</Link>
-          <Link to="/" className="link link-hover">Press kit</Link>
+          <Link to="/" className="link link-hover font-bold">Press kit</Link>
         </div> 
         <div>
           <span className="footer-title font-extrabold ">Legal</span> 
@@ -29,7 +29,7 @@ const Footer = () => {
           <Link to="/" className="link link-hover font-bold">Cookie policy</Link>
         </div>
         </div>
-        <div className='mt-32'>
+        <div className='mt-16'>
     <p className='text-center font-bold'>Copyright © 2023 - All right reserved by <img className='logo1 ml-6' src={logo} alt="" srcset="" /> EasyCart Ltd</p>
   </div>
        
