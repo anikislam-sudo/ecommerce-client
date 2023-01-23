@@ -25,7 +25,7 @@ const Cart = () => {
           <h5 className='text-xl font-bold'>
             Cart {totalUniqueItems} total Items: ({totalItems})
           </h5>
-          <table className="table lg:w-full w-50 table-auto table-hover m-0">
+          <table className="table lg:w-full  table-auto table-hover m-0">
             <tbody>
               {items.map((item, index) => {
                 return (

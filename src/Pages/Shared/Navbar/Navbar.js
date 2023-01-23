@@ -1,16 +1,30 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping} from '@fortawesome/free-solid-svg-icons'
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import logo from "../../../Assets/Easy_Cart-removebg-preview.png";
 import "./Navbar.css";
+import { AuthContext } from '../../Contexts/AuthProvider';
 const Navbar = () => {
+  const { user, logOut } = useContext(AuthContext);
+
+  const handleLogOut = () => {
+      logOut()
+          .then(() => { })
+          .catch(err => console.log(err));
+  }
     const menuItems =
     <React.Fragment>
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/product">Product </Link></li>
+             
+              {user?.uid ?
+            <>
+             <li><Link to="/product">Product </Link></li>
               <li><Link to="/cart"> <FontAwesomeIcon className=''icon={faCartShopping}></FontAwesomeIcon></Link></li>
-              <li><Link to="/">Login</Link></li>
+                <li><Link to="/dashboard">Dashboard</Link></li>
+                <li><button onClick={handleLogOut}>Sign out</button></li>
+            </>
+            : <li><Link to="/login">Login</Link></li>}
 
     </React.Fragment>
     return (

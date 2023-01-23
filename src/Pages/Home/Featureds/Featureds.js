@@ -9,7 +9,7 @@ import "./Featureds.css";
 const Featureds = () => {
   const [services,setServices] = useState([]);
   useEffect(()=>{
-    fetch("fakeData.json")
+    fetch("http://localhost:5000/easyCartOption")
     .then(res=>res.json())
     .then(data=>setServices(data))
  }
